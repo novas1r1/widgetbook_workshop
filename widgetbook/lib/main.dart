@@ -27,10 +27,7 @@ class WidgetbookApp extends StatelessWidget {
       ],
       addons: [
         DeviceFrameAddon(
-          devices: [
-            Devices.ios.iPhone13,
-            Devices.ios.iPad,
-          ],
+          devices: Devices.all,
           initialDevice: Devices.ios.iPhone13,
         ),
         InspectorAddon(),
@@ -68,6 +65,7 @@ class WidgetbookApp extends StatelessWidget {
             child: child,
           ),
         ),
+        GridAddon(),
       ],
     );
   }
